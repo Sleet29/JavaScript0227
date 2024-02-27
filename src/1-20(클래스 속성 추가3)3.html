@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>위치 필터 선택자 odd,even</title>
+    <style>
+        .high-light {
+            background: yellow;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- 
+    attr() 메서드 : 문서 객체에 속성을 추가하는  -->
+    <script>
+        $(document).ready(function() {
+            $('h1').attr('class','high-light');
+        });
+    </script>
+</head>
+<body>
+    <h1>item - 0</h1>
+    <h1>item - 1</h1>
+    <h1>item - 2</h1>
+    <h1>item - 3</h1>
+    <h1>item - 4</h1>
+</body>
+</html>

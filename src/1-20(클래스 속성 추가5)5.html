@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>위치 필터 선택자 odd,even</title>
+    <style>
+        .high-light {
+            background: yellow;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function() {
+            setTimeout(function() {
+            	const imagepath = $('input:checked').val();
+            	alert(imagepath);
+            	$('img').attr('src',imagepath);
+        	},3000)
+        });
+    </script>
+</head>
+<body>
+    <h3>선택한 그림 출력</h3>
+    <hr>
+    <div> radio 버튼을 클릭하면 이미지가 바뀝니다.</div>
+    <form>
+        <label> <input type="radio" name="icon" value='../image/image1.png'>image1 </label>
+        <label> <input type="radio" name="icon" value='../image/image2.png' checked>image2 </label>
+        <label> <input type="radio" name="icon" value='../image/image3.png'>image3 </label>
+        
+        <img src='../image/image2.png'>
+    </form>
+</body>
+</html>
