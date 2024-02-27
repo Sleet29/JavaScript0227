@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/jquery-3.7.1.js"></script>
+    <!-- 
+    		attr() 메소드
+    		1. $(selector).attr(name);
+    		2. $(selector).attr(name, value);
+    		3. $(selector).attr(name, function(index,attr){});
+    		
+    		jQuery 위치 필터 선택자
+    			요소 : eq(n) : 선택한 요소의 인덱스 번호에 해당하는 문서 객체 선택. (0,1,2,3,...)
+    
+    -->
+    <script>
+        $(document).ready(function() {
+        	console.log($('img:eq(0)').attr('src')); // 첫번째 속성 값 가져옵니다.
+        	console.log($('img:eq(1)').attr('src')); // 두번째 속성 값 가져옵니다.
+        	console.log($('img:eq(2)').attr('src')); // 세번째 속성 값 가져옵니다.
+        });
+    </script>
+</head>
+<body>
+	<img src="../image/image1.png" alt="image1.png">
+	<img src="../image/image2.png" alt="image2.png">
+	<img src="../image/image3.png" alt="image3.png">
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/jquery-3.7.1.js"></script>
+    <script>
+		$(document).ready(function() {
+			const moyang = [ "★", "※", "♣️" ];
+			$('div').click(function(){
+				$(this).html(function(index,html){
+					console.log("index="+index+",html="+html)
+					return html+moyang[$(this).index()];
+				});
+			});
+		});
+</script>
+</head>
+<body>
+    <div>월요일</div>
+    <div>화요일</div>
+    <div>수요일</div>
+</body>
+</html>
